@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FF-09 (E3): complejidad ciclomática por método. PMD reporta los métodos con
+     CC >= methodReportLevel, así que 11 equivale a exigir CC <= 10. -->
+<ruleset name="Complejidad Apuntado"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    <description>Límite de complejidad ciclomática (CC &lt;= 10) para todo el servidor.</description>
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <property name="methodReportLevel" value="11"/>
+            <property name="classReportLevel" value="999"/>
+        </properties>
+    </rule>
+</ruleset>
